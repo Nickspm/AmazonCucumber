@@ -1,0 +1,98 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: tripathimani4@gmail.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User login",
+        "description": "",
+        "id": "amazon-automation;user-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9340256913,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user opens browser",
+            "match": {
+              "location": "LoginStepDefinations.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113652317,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is at homepage",
+            "match": {
+              "location": "LoginStepDefinations.user_is_at_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 729486,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\r\n\tat com.amazon.pages.LoginPage.signinMouseHover(LoginPage.java:35)\r\n\tat com.amazon.stepdefinations.LoginStepDefinations.user_hovers_at_login_option_and_clicks_on_login(LoginStepDefinations.java:30)\r\n\tat ✽.Then user hovers at login option and clicks on login(Amazon.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "user hovers at login option and clicks on login",
+            "match": {
+              "location": "LoginStepDefinations.user_hovers_at_login_option_and_clicks_on_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user is at login page",
+            "match": {
+              "location": "LoginStepDefinations.user_is_at_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user enters \u003cusername\u003e and \u003cpassword\u003e",
+            "match": {
+              "location": "LoginStepDefinations.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinations.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon automation",
+    "description": "",
+    "id": "amazon-automation",
+    "keyword": "Feature",
+    "uri": "Amazon.feature"
+  }
+]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.454639">
+<testcase classname="Amazon automation" name="User login" time="9.454639">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy15.click(Unknown Source)&#13;&#10;&#9;at com.amazon.pages.LoginPage.signinMouseHover(LoginPage.java:35)&#13;&#10;&#9;at com.amazon.stepdefinations.LoginStepDefinations.user_hovers_at_login_option_and_clicks_on_login(LoginStepDefinations.java:30)&#13;&#10;&#9;at ✽.Then user hovers at login option and clicks on login(Amazon.feature:10)&#13;&#10;"><![CDATA[Given user opens browser....................................................passed
+Then user is at homepage....................................................passed
+Then user hovers at login option and clicks on login........................failed
+When user is at login page..................................................skipped
+Then user enters <username> and <password>..................................skipped
+Then user clicks on login button............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.amazon.pages.LoginPage.signinMouseHover(LoginPage.java:35)
+	at com.amazon.stepdefinations.LoginStepDefinations.user_hovers_at_login_option_and_clicks_on_login(LoginStepDefinations.java:30)
+	at ✽.Then user hovers at login option and clicks on login(Amazon.feature:10)
+]]></failure>
+</testcase>
+</testsuite>
